@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/edtxNilai1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/nilai1" />
+
+    <EditText
+        android:id="@+id/edtxNilai2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/nilai2"
+        android:layout_below="@+id/edtxNilai1" />
+
+    <TextView
+        android:id="@+id/textMenampilakanNilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtxNilai2"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:text="@string/menampilkan_nilai"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/textMenampilakanNilai" >
+<!--        weightsum untuk membagi kolom pada linear kolom-->
+
+        <ImageButton
+            android:id="@+id/btnKali"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_multiply" />
+
+        <ImageButton
+            android:id="@+id/btnTambah"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_plus" />
+
+        <ImageButton
+            android:id="@+id/btnKurang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_minus" />
+
+        <ImageButton
+            android:id="@+id/btnBagi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_division" />
+
+    </LinearLayout>
+
+</RelativeLayout>
